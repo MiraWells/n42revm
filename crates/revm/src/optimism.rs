@@ -4,6 +4,7 @@ mod bn128;
 mod fast_lz;
 mod handler_register;
 mod l1block;
+mod rollup_cost;
 
 pub use handler_register::{
     deduct_caller, end, last_frame_return, load_accounts, load_precompiles,
@@ -11,3 +12,4 @@ pub use handler_register::{
     validate_tx_against_state,
 };
 pub use l1block::{L1BlockInfo, BASE_FEE_RECIPIENT, L1_BLOCK_CONTRACT, L1_FEE_RECIPIENT};
+pub use rollup_cost::RollupCostData;
